@@ -1,4 +1,4 @@
-https://morning-wildwood-72184.herokuapp.com/api/notes
+
 Steps to deploy:
 
 1. heroku login, heroku create
