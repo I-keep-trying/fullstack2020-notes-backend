@@ -1,0 +1,25 @@
+GET http://localhost:3003 HTTP/1.1
+
+###
+
+GET http://localhost:3003/api/notes HTTP/1.1
+
+###
+GET http://localhost:3003/api/notes/5ea33ccf50cc4103e058471a HTTP/1.1
+
+###
+DELETE http://localhost:3003/api/notes/5ea348e21871c62df844d4a7 HTTP/1.1
+
+###
+POST http://localhost:3003/api/notes HTTP/1.1
+Content-Type: application/json
+
+{
+    "content": "Happy birthday Rich",
+    "important": false
+}
+
+###
+curl --request POST --url http://localhost:3003/api/notes --header 'content-type: application/json' --data '{"content": "VS Code REST client is pretty good","important": false}'
+###
+GET https://google.com HTTP/1.1
